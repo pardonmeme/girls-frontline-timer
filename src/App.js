@@ -20,7 +20,7 @@ class App extends Component {
           <h1>Timers for Girls Frontline [UTC +0]</h1>
         </header>
         {
-          timers.map( timer => {
+          timers.sort( ( a, b ) => a.hours - b.hours).map( timer => {
             const gameReset = this.gameReset( timer.hours, timer.minutes)
             return (
               <div  className="item">
