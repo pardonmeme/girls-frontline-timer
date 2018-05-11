@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #46313E;
+  font-family: "Lato";
+  overflow-y: scroll;
+}
+
+h1,h2,h3, span, p, div, input {
+  font-family: "Lato";
+}
+p {
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 95%;
+  padding: 1rem;
+  background: #DB5764;
+  margin-bottom: .3rem;
+}
+
+.bar {
+  border-radius: 0;
+}
+
+.rc-progress-line-trail {
+    stroke-linecap: square;
+    stroke: #46313E;
+}
+.rc-progress-line-path {
+  stroke-linecap: square;
+  stroke: #AB2832;
+}
