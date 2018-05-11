@@ -23,10 +23,9 @@ class App extends Component {
           timers.sort( ( a, b ) => a.hours - b.hours).map( timer => {
             const gameReset = this.gameReset( timer.hours, timer.minutes)
             return (
-              <div  className="item">
-                <p>{ timer.name }</p>
-                <Countdown date={gameReset} renderer={(time) => this.progressBar(time, `Already done, ${ timer.name }`)}/>
-              </div>
+              <React.Fragment>
+                <Countdown date={gameReset} renderer={(time) => this.progressBar(time, `${ timer.name }`)}/>
+              </React.Fragment>
             )
           })
         }
@@ -52,9 +51,10 @@ class App extends Component {
     const max = time.date.valueOf()
     const result = this.calculatePercent(max - current, time.total)
     if (time.completed) {
-      return  <strike>{ doneMessage }</strike>
+      return  <div className="item done"><p>{ doneMessage }</p><strike>{ "Finished!" }</strike></div>
     } else {
-      return <div>
+      return <div className="item">
+        <p>{ doneMessage }</p>
         <span>{time.hours} hours, {time.minutes} minutes, {time.seconds} seconds</span>
       </div>
     }

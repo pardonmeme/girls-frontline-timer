@@ -56,3 +56,7 @@ header {
   stroke-linecap: square;
   stroke: #AB2832;
 }
+
+.done {
+  opacity: .3;
+}
