@@ -16,9 +16,9 @@ class App extends Component {
 
     return (
       <div className="container">
-        <div className="item">
+        <header>
           <h1>Timers for Girls Frontline [UTC +0]</h1>
-        </div>
+        </header>
         {
           timers.map( timer => {
             const gameReset = this.gameReset( timer.hours, timer.minutes)
@@ -52,7 +52,7 @@ class App extends Component {
     const max = time.date.valueOf()
     const result = this.calculatePercent(max - current, time.total)
     if (time.completed) {
-      return  `${ doneMessage }`
+      return  <strike>{ doneMessage }</strike>
     } else {
       return <div>
         <span>{time.hours} hours, {time.minutes} minutes, {time.seconds} seconds</span>
