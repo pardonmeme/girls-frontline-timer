@@ -88,22 +88,22 @@ const timers = [
   },
   {
     name: "Dorm Open 11:00 - 14:00 To start( 9pm UTC )",
-    hours: 21,
+    hours: 19,
     minutes: 0
   },
   {
     name: "Dorm Open 11:00 - 14:00 To end( 12am UTC )",
-    hours: 24,
+    hours: 22,
     minutes: 0
   },
   {
     name: "Dorm Open 17:00 - 20:00 To start( 3am UTC )",
-    hours: 3,
+    hours: 1,
     minutes: 0
   },
   {
     name: "Dorm Open 17:00 - 20:00 To end ( 6am UTC )",
-    hours: 6,
+    hours: 4,
     minutes: 0
   },
 ]
