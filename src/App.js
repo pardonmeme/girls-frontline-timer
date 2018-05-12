@@ -106,4 +106,9 @@ const timers = [
     hours: 4,
     minutes: 0
   },
+  {
+    name: "Kalina's daily gift",
+    hours: 12,
+    minutes: 0
+  }
 ]
