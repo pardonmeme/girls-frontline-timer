@@ -77,32 +77,32 @@ const timers = [
     minutes: 0
   },
   {
-    name: "Battery Reset 1st ( 11am UTC )",
+    name: "Friend's dorm battery reset ( 11am UTC )",
     hours: 11,
     minutes: 0
   },
   {
-    name: "battery Reset 2nd( 11pm UTC )",
+    name: "Friend's dorm battery reset 2nd( 11pm UTC )",
     hours: 23,
     minutes: 0
   },
   {
-    name: "Dorm Open 11:00 - 14:00 To start( 9pm UTC )",
+    name: "Battery condenser recharge 11:00 - 14:00 [To start]( 7pm UTC )",
     hours: 19,
     minutes: 0
   },
   {
-    name: "Dorm Open 11:00 - 14:00 To end( 12am UTC )",
+    name: "Battery condenser recharge 11:00 - 14:00 [To end]( 10pm UTC )",
     hours: 22,
     minutes: 0
   },
   {
-    name: "Dorm Open 17:00 - 20:00 To start( 3am UTC )",
+    name: "Battery condenser recharge 17:00 - 20:00 [To start]( 3am UTC )",
     hours: 1,
     minutes: 0
   },
   {
-    name: "Dorm Open 17:00 - 20:00 To end ( 6am UTC )",
+    name: "Battery condenser recharge 17:00 - 20:00 [To end] ( 6am UTC )",
     hours: 4,
     minutes: 0
   },
